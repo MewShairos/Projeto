@@ -1,7 +1,9 @@
 from django.urls import path
-
-from Recipes import views
+from . import views
 
 urlpatterns = [
-    path('', views.sobre),
+    path('', views.home),
+    path('recipes/<int:id>/', views.recipe),
 ]
+
+# UrlsDinâmicas: <id> funciona como parâmetro, passando para a view. Já ":int"
