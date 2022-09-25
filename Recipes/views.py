@@ -1,5 +1,10 @@
 from django.shortcuts import render
 
 
-def sobre(request):
+def home(request):
     return render(request, 'recipes/pages/home.html')
+
+# Recebendo ID 
+def recipe(request, id):
+    return render(request, 'recipes/pages/home.html')
+
